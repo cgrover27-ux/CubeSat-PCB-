@@ -1,4 +1,4 @@
-26780047788282512
+26783629973227064
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70917,6 +70917,13 @@ AI Kendryte K210 RISC-V
 85
 72
 Module
+SparkFun GNSS Receiver Breakout - MAX-M10S (Qwiic)
+
+
+0
+0
+0
+Module
 Texas_EUK_R-PDSS-T7_THT
 Texas Instruments EUK 7 Pin Double Sided Module
 module pcb
@@ -70937,6 +70944,13 @@ module pcb
 0
 7
 7
+Module
+Untitled
+
+
+0
+0
+0
 Motors
 Vybronics_VZ30C1T8219732L
 Vibration motor, 2.3-3.2V, 14000rpm, 0.7G, https://www.vybronics.com/wp-content/uploads/datasheet-files/Vybronics-VZ30C1T8219732L-datasheet.pdf
