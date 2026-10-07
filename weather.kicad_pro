@@ -669,7 +669,7 @@
         "uuid": "9d268553-d6a4-4c16-8bb7-65b55b0230e3"
       }
     ],
-    "used_designators": "J2,CoutputCap1,L2,CfirstBat1,R9-11,BT2,CforSD1,U4,U6,U8,Q3-4,C7-10,#PWR9,#PWR14-16,#PWR23,#PWR26,#PWR39-40",
+    "used_designators": "J2,CoutputCap1,CfirstBat1,R9-11,L2,BT2,CforSD1,U4,U6,U8,Q3-4,C7-10,#PWR2,#PWR9,#PWR14-16,#PWR23,#PWR26,#PWR39-40",
     "variants": []
   },
   "sheets": [
