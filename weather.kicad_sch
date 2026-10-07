@@ -5212,6 +5212,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 189.23 101.6)
@@ -5220,10 +5335,22 @@
 		(uuid "1d7fdc47-ebcc-494a-81a0-f3c4d0cb2c7c")
 	)
 	(junction
+		(at 209.55 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2675bf53-a1ba-478a-bdad-b1c5634e8c02")
+	)
+	(junction
 		(at 186.69 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27500dce-c0a0-404d-b562-6bc9a36eb18e")
+	)
+	(junction
+		(at 116.84 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e7f86ed-c699-42af-99f6-9b3f823a1624")
 	)
 	(junction
 		(at 165.1 27.94)
@@ -5298,8 +5425,16 @@
 		(uuid "f2c84978-dac7-4228-b1c3-11399cca98d5")
 	)
 	(no_connect
+		(at 109.22 119.38)
+		(uuid "018cb464-0931-4d30-8071-b2554bba67a6")
+	)
+	(no_connect
 		(at 223.52 41.91)
 		(uuid "01e79f6d-877c-4668-b242-fcae4035d42c")
+	)
+	(no_connect
+		(at 109.22 116.84)
+		(uuid "3770551b-b228-4fa5-a89c-294555557180")
 	)
 	(no_connect
 		(at 223.52 29.21)
@@ -5314,12 +5449,24 @@
 		(uuid "3c4aa380-bb29-47b3-97fd-e356125a076d")
 	)
 	(no_connect
+		(at 109.22 111.76)
+		(uuid "40beaaa8-0ae5-4b85-b5ff-1d850f1f688a")
+	)
+	(no_connect
 		(at 132.08 60.96)
 		(uuid "41146a18-1322-425d-a312-5234c9370ab7")
 	)
 	(no_connect
 		(at 189.23 109.22)
 		(uuid "4192cc88-fdfb-4c76-9457-1f0e0ac2a11c")
+	)
+	(no_connect
+		(at 109.22 118.11)
+		(uuid "4d7bfe54-3d48-4435-ae68-20913f8118cf")
+	)
+	(no_connect
+		(at 109.22 114.3)
+		(uuid "5491db94-5c82-4420-a23e-bf629990cad2")
 	)
 	(no_connect
 		(at 241.3 69.85)
@@ -5478,6 +5625,16 @@
 			(type default)
 		)
 		(uuid "14e86eac-7ef2-40f4-8f56-a06d742a2988")
+	)
+	(wire
+		(pts
+			(xy 116.84 30.48) (xy 116.84 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c46ee4d-39e5-45ad-9868-81d52cdedaaf")
 	)
 	(wire
 		(pts
@@ -5801,7 +5958,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 27.94) (xy 116.84 33.02)
+			(xy 116.84 27.94) (xy 116.84 30.48)
 		)
 		(stroke
 			(width 0)
@@ -7007,6 +7164,85 @@
 			(project "weather"
 				(path "/9d268553-d6a4-4c16-8bb7-65b55b0230e3"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 209.55 140.97 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "150da27d-a038-4610-aaa9-a1057e6e27d5")
+		(property "Reference" "#FLG01"
+			(at 207.645 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 205.74 140.9699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 209.55 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a47ef4e-4510-44f3-99c5-6501d991c7d5")
+		)
+		(instances
+			(project "weather"
+				(path "/9d268553-d6a4-4c16-8bb7-65b55b0230e3"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -9162,9 +9398,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 			(at 162.56 71.12 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9612,6 +9847,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 116.84 30.48 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8db5f710-7ea3-4b89-824f-23507be89a9e")
+		(property "Reference" "#FLG02"
+			(at 114.935 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 113.03 30.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 116.84 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3bb187d-ea6f-4158-b3d8-21291f4d72ab")
+		)
+		(instances
+			(project "weather"
+				(path "/9d268553-d6a4-4c16-8bb7-65b55b0230e3"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 49.53 158.75 0)
 		(unit 1)
@@ -9764,6 +10078,84 @@
 			(project "weather"
 				(path "/9d268553-d6a4-4c16-8bb7-65b55b0230e3"
 					(reference "CfirstBat1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 41.91 83.82 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "989955b5-e4cd-4265-ab62-1f5ea5782d49")
+		(property "Reference" "#PWR030"
+			(at 41.91 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 41.91 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 41.91 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3fe7c965-c460-4014-926f-053f983fe692")
+		)
+		(instances
+			(project "weather"
+				(path "/9d268553-d6a4-4c16-8bb7-65b55b0230e3"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -10166,9 +10558,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
 			(at 24.13 157.48 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
