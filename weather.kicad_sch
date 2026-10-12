@@ -5708,16 +5708,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 58.42) (xy 161.29 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3363a581-92bf-4cd8-89f9-867f288e257d")
-	)
-	(wire
-		(pts
 			(xy 161.29 68.58) (xy 161.29 72.39)
 		)
 		(stroke
@@ -6485,16 +6475,6 @@
 			(justify right bottom)
 		)
 		(uuid "1daf8b56-54d7-446e-a385-0e5acd2711c9")
-	)
-	(label "pico3.3"
-		(at 161.29 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2d321993-dd8e-42e6-a1aa-295db6361769")
 	)
 	(label "SW"
 		(at 137.16 27.94 0)
@@ -11618,6 +11598,84 @@
 			(project "weather"
 				(path "/9d268553-d6a4-4c16-8bb7-65b55b0230e3"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 161.29 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de3f004c-ae90-4366-a144-17bdabe363ec")
+		(property "Reference" "#PWR041"
+			(at 161.29 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 161.29 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 161.29 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7cd16251-ef61-4386-b27e-cb6cdad17b99")
+		)
+		(instances
+			(project "weather"
+				(path "/9d268553-d6a4-4c16-8bb7-65b55b0230e3"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
